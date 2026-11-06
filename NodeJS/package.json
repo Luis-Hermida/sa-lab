@@ -1,0 +1,11 @@
+{
+  "name": "sa-lab-nodejs",
+  "private": true,
+  "description": "Node.js fundamentals exercises for the Solutions Architect program",
+  "workspaces": [
+    "exercises/*"
+  ],
+  "engines": {
+    "node": ">=22"
+  }
+}

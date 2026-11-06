@@ -1,24 +1,26 @@
 # sa-lab
 
-Ejercicios cortos de fundamentos (redes, concurrencia, I/O, datos) que acompañan mi programa para llegar a Solutions Architect. El proyecto principal vive en [Forge](https://github.com/luis-hermida/forge); aquí van los ejercicios sueltos que no son parte de Forge.
+Short fundamentals exercises (networking, concurrency, I/O, data) that go with my program to become a Solutions Architect. The main project lives in [Forge](https://github.com/luis-hermida/forge); this repo holds the standalone exercises that are not part of Forge.
 
-## Estructura
+## Structure
 
 ```
-exercises/
-  01-tcp-server/   Servidor HTTP escrito a mano sobre TCP (semana 1)
+NodeJS/
+  exercises/
+    tcp-server/   Hand-written HTTP server over TCP (week 1)
 ```
 
-Cada ejercicio es un workspace de npm con su propio `README.md` (enunciado, cómo correrlo y notas de razonamiento).
+One top-level folder per language/runtime. Each exercise has its own `README.md` (problem statement, how to run it, reasoning notes).
 
-## Reglas
+## Rules
 
-- Los ejercicios marcados **sin IA** los escribo yo. La IA solo revisa después.
-- Cada README termina con mis respuestas de razonamiento: qué aprendí, qué se rompe y por qué.
+- Exercises marked **no AI** are written by me. AI only reviews afterwards.
+- Every exercise README ends with my reasoning answers: what I learned, what breaks and why.
 
-## Uso
+## Usage
 
 ```bash
+cd NodeJS
 nvm use            # Node 22
-npm run start -w exercises/01-tcp-server
+npm run start -w exercises/tcp-server
 ```
