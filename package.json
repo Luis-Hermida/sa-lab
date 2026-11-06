@@ -1,0 +1,11 @@
+{
+  "name": "sa-lab",
+  "private": true,
+  "description": "Ejercicios de fundamentos para el programa de Solutions Architect",
+  "workspaces": [
+    "exercises/*"
+  ],
+  "engines": {
+    "node": ">=22"
+  }
+}
