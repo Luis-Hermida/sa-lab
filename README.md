@@ -7,15 +7,15 @@ Short fundamentals exercises (networking, concurrency, I/O, data) that go with m
 ```
 NodeJS/
   exercises/
-    tcp-server/   Hand-written HTTP server over TCP (week 1)
+    tcp-server/   Hand-written HTTP server over TCP
 ```
 
-One top-level folder per language/runtime. Each exercise has its own `README.md` (problem statement, how to run it, reasoning notes).
+One top-level folder per language/runtime. Each exercise has its own `README.md` (problem statement and how to run it).
 
 ## Rules
 
 - Exercises marked **no AI** are written by me. AI only reviews afterwards.
-- Every exercise README ends with my reasoning answers: what I learned, what breaks and why.
+- Only code and problem statements live here. Personal notes and answers stay out of the repo.
 
 ## Usage
 
