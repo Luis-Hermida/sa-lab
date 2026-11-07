@@ -1,6 +1,4 @@
-# TCP server · no AI
-
-**No AI**: written by hand; AI only reviews at the end.
+# TCP server
 
 ## Concept
 

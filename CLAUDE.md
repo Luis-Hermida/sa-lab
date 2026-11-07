@@ -36,6 +36,6 @@ If I ask to skip a step, remind me once what I'd be skipping, then do as I say. 
 
 ## Rules for Claude
 
-- Exercises marked **no AI** are written by me. Do not write, complete or hint the solution in code unless I explicitly ask. You may review after I finish.
+- Every exercise is **no AI** by default: I write it. Do not write, complete or hint the solution in code unless I explicitly ask. Don't put "no AI" labels in READMEs; this file is the only place the rule lives. You may review after I finish.
 - When reviewing, ask me questions first (what breaks, why) before giving the answer.
 - Don't add dependencies to an exercise without asking; the point is to use the standard library.
