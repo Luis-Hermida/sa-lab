@@ -17,17 +17,22 @@ const server = net.createServer((socket) => {
             "Hello",
         ].join("\r\n"))
 
-        socket.end(() => {
-            console.log('Sent FIN packet.')
-        })
+        // socket.end(() => {
+        //     console.log('Sent FIN packet.')
+        // })
     });
 
 
     socket.on('error', (error) => {
         console.log(error);
     })
-
-
 });
 
+
+server.maxConnections = 50
 server.listen(8080, () => console.log("Listening Port 8080"));
+setInterval(() => {
+    server.getConnections((error, count) => {
+        console.log(`Open connections: ${count}`);
+    })
+}, 1000)
