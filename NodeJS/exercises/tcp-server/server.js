@@ -1,5 +1,5 @@
 // Exercise · TCP server
-// Write your server here. See README.md for the task.
+// Write your server here. See README.md for the specs.
 
 import net from 'node:net';
 
