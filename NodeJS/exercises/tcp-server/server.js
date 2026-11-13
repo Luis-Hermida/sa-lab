@@ -7,7 +7,7 @@ const server = net.createServer((socket) => {
     console.log(`New connection from: ${socket.remoteAddress}`);
 
     socket.on('data', (chunk) => {
-        console.log(`Recieved: ${chunk}.`);
+        console.log(`Received: ${chunk}.`);
 
         socket.write([
             "HTTP/1.1 200 OK",
@@ -30,9 +30,10 @@ const server = net.createServer((socket) => {
 
 
 server.maxConnections = 50
-server.listen(8080, () => console.log("Listening Port 8080"));
 setInterval(() => {
-    server.getConnections((error, count) => {
+    server.getConnections((_error, count) => {
         console.log(`Open connections: ${count}`);
     })
 }, 1000)
+server.listen(8080, () => console.log("Listening Port 8080"));
+
