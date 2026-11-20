@@ -23,6 +23,7 @@ const server = net.createServer((socket) => {
     };
 
     const deadline = setTimeout(() => {
+        console.log('Deadline');
         reject(STATUS.TIMEOUT)
     }, 10000);
 
@@ -41,11 +42,6 @@ const server = net.createServer((socket) => {
         if (headerSize > MAX_HEADER) {
             reject(STATUS.TOO_LARGE);
             return;
-        }
-
-        // Checks buffer size to calculate bytes
-        if (end === 1 && buf.length > MAX_HEADER) {
-            reject(STATUS.TOO_LARGE);
         }
 
         if (end !== -1) {
@@ -67,6 +63,7 @@ const server = net.createServer((socket) => {
 
     socket.setTimeout(5000);
     socket.on('timeout', () => {
+        console.log('Timeout');
         reject(STATUS.TIMEOUT)
     })
 
