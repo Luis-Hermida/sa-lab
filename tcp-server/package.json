@@ -6,5 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server-fixed.js"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }

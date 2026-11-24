@@ -1,4 +1,4 @@
-Status: draft
+Status: approved (2026-11-23, by Luis: option 3)
 Summary: Three ways to flatten sa-lab, which today nests every exercise three levels deep
 (`NodeJS/exercises/tcp-server/`). Recommended: one folder per exercise at the repo root,
 each one standalone, with no npm workspace.

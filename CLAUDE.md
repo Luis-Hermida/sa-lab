@@ -10,15 +10,15 @@ Short fundamentals exercises (networking, concurrency, I/O, data) for my Solutio
 
 ## Structure
 
-One top-level folder per language/runtime, each with its own tooling:
+One folder per exercise at the repo root, each one standalone with its own tooling:
 
 ```
-NodeJS/
-  exercises/
-    tcp-server/   Hand-written HTTP over raw TCP
+.nvmrc          Node 22 for every Node exercise (nvm looks in parent folders)
+tcp-server/     Hand-written HTTP over raw TCP (Node.js)
 ```
 
-- `NodeJS/` is an npm workspaces root (Node 22, see `.nvmrc`). Run npm commands from inside `NodeJS/`.
+- No shared workspace and no root `package.json`. Run commands from inside the exercise folder (`cd tcp-server && npm start`).
+- A new exercise is a new root folder. Add it to the exercise table in `README.md`.
 - Each exercise folder has its own `README.md`: problem statement and how to run it. Nothing personal goes in the repo: no answers, notes or progress. Reasoning questions go to the question bank via `/learning:bank`.
 
 ## Learning workflow (required for functional code)
